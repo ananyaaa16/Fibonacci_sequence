@@ -1,0 +1,17 @@
+PROGRAM fibonacci_series
+  IMPLICIT NONE
+  INTEGER:: X, Y, Z 
+  REAL:: phi_rat                    !golden ratio aproximate
+  INTEGER:: n=3                     !iterator declearation
+
+  Z=1
+  Y=1                               !initial conditions
+2 X=Y+Z                             !iteration step label 2
+  phi_rat=X/(real(Y))               !GOLDEN RATIO CALCULATION
+  PRINT ' (2i15 f10.5) ', n, x, phi_rat               !printing out values. 2i15 means 2 integer variables and researving 15 spaces for the and f10.5 is researving 10.5 spaces for a real no.
+  Z=Y                               !shifting the variables
+  Y=X                               !shifting variables
+  n=n+1                             !incrementing n
+  IF(n<46) GOTO 2
+
+END PROGRAM fibonacci_series
